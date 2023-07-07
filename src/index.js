@@ -1,4 +1,5 @@
-const test = document.createElement('div');
-test.innerHTML = 'TEST';
+import './style.css';
+import { renderHeaderFooter } from './renderHeaderFooter';
 
-document.body.appendChild(test);
+renderHeaderFooter();
+
