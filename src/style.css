@@ -7,8 +7,11 @@
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     position: relative;
-    min-height: 100vh;
+
 }
 
 header {
@@ -75,4 +78,11 @@ footer {
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
+}
+
+
+#menu-cover-image {
+    width: 100%;
+    height: calc(100vh - 11.3rem);
+    object-fit: cover;
 }
