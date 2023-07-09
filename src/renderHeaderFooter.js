@@ -15,20 +15,27 @@ export function renderHeaderFooter() {
 
     const btnHome = document.createElement('button');
     btnHome.textContent = 'Home';
-    btnHome.setAttribute('class', 'navbar-buttons');
+    btnHome.setAttribute('id', 'btn-home');
+    btnHome.classList.add('navbar-buttons');
     navbar.appendChild(btnHome);
 
     const btnMenu = document.createElement('button');
     btnMenu.textContent = 'Menu';
-    btnMenu.setAttribute('class', 'navbar-buttons');
+    btnMenu.setAttribute('id', 'btn-menu');
+    btnMenu.classList.add('navbar-buttons');
     navbar.appendChild(btnMenu);
 
     const btnContact = document.createElement('button');
     btnContact.textContent = 'Contact';
-    btnContact.setAttribute('class', 'navbar-buttons');
+    btnContact.setAttribute('id', 'btn-contact');
+    btnContact.classList.add('navbar-buttons');
     navbar.appendChild(btnContact);
 
     const footer = document.createElement('footer');
     footer.innerHTML = 'Copyright © 2023 ivooo369 <a href="https://github.com/ivooo369" id="github-link"><i class="fab fa-github fa-lg"></i></a>';
     content.appendChild(footer);
 }
+
+
+
+
