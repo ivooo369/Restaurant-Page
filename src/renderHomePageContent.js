@@ -5,11 +5,11 @@ export function renderHomePageContent() {
     const footer = document.querySelector('footer');
 
     const homePageContainer = document.createElement('div');
-    homePageContainer.setAttribute('id', 'home-page-container');
+    homePageContainer.classList.add('home-page-container');
     content.insertBefore(homePageContainer, footer);
 
     const homePageContentContainer = document.createElement('div');
-    homePageContentContainer.setAttribute('id', 'home-page-content');
+    homePageContentContainer.classList.add('home-page-content');
     homePageContainer.appendChild(homePageContentContainer);
 
     const homePageContentTitle = document.createElement('h2');

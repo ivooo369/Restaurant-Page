@@ -3,6 +3,7 @@ import Icon from './images/tab-icon.png';
 import { renderHeaderFooter } from './renderHeaderFooter';
 import { renderHomePageContent } from './renderHomePageContent';
 import { renderMenuPageContent } from './renderMenuPageContent';
+import { renderContactPageContent } from './renderContactPageContent';
 import { handleEventListeners } from './handleEventListeners';
 
 const head = document.querySelector('head');
@@ -14,5 +15,6 @@ head.appendChild(tabIcon);
 renderHeaderFooter();
 renderHomePageContent();
 renderMenuPageContent();
+renderContactPageContent();
 handleEventListeners();
 
