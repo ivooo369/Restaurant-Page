@@ -76,6 +76,7 @@ footer {
     height: calc(100vh - 11.3rem);
     background-size: cover;
     background-position: center;
+    /* min-height: 600px; */
 }
 
 .home-page-container {
@@ -270,16 +271,48 @@ footer {
 }
 
 @media(max-width: 320px) {
+    .contact-page-content {
+        width: 80%;
+    }
+}
+
+@media(max-width: 320px) {
     .navbar {
-        gap: 0;
+        gap: 1rem;
     }
 
     .dishes-container {
         grid-template-rows: repeat(8, 1fr);
         grid-template-columns: 1fr;
+        overflow: auto;
     }
 
     .dish-image {
         display: none;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .navbar-buttons {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .home-page-container,
+    .menu-page-container,
+    .contact-page-container {
+        overflow: auto;
+        height: 100vh;
+    }
+}
+
+@media(max-height: 600px) {
+
+    .home-page-container,
+    .menu-page-container,
+    .contact-page-container {
+        height: 40rem;
     }
 }
