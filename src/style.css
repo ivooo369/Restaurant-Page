@@ -76,7 +76,6 @@ footer {
     height: calc(100vh - 11.3rem);
     background-size: cover;
     background-position: center;
-    /* min-height: 600px; */
 }
 
 .home-page-container {
@@ -115,6 +114,7 @@ footer {
     margin-bottom: 3rem;
     background-color: #000000bf;
     border-radius: 2rem;
+    animation: fadeIn 1s;
 }
 
 .home-page-content h2,
@@ -314,5 +314,15 @@ footer {
     .menu-page-container,
     .contact-page-container {
         height: 40rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
