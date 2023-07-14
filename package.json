@@ -6,9 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js --open",
     "build": "webpack  --config webpack.prod.js",
-    "clean": "rm -rf dist/*",
-    "release": "npm run clean && npm run build",
-    "deploy": "cd dist && git add --all && git commit -m \"Release\" && git push"
+    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
