@@ -237,42 +237,15 @@ footer {
     background-color: #5f5f5f;
 }
 
-@media(max-width: 768px) {
-    .home-page-content img {
-        width: 80%;
-    }
-
+@media(min-width: 320px) and (max-width: 768px) {
     .contact-page-content {
-        width: 60%;
-    }
-
-    .dishes-container {
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
-    }
-
-    .dish-container {
-        gap: 0;
-    }
-
-    .dish-image {
-        width: 80%;
-    }
-
-    .menu-page-content {
-        width: 80%;
-        height: 80%;
+        width: 70%;
     }
 }
 
 @media(min-width: 768px) and (max-width: 900px) {
     .contact-page-content {
         width: 40%;
-    }
-}
-
-@media(max-width: 320px) {
-    .contact-page-content {
-        width: 80%;
     }
 }
 
@@ -306,6 +279,10 @@ footer {
         overflow: auto;
         height: 100vh;
     }
+
+    .contact-page-content {
+        width: 80%;
+    }
 }
 
 @media(max-height: 600px) {
@@ -314,6 +291,33 @@ footer {
     .menu-page-container,
     .contact-page-container {
         height: 40rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .home-page-content img {
+        width: 80%;
+    }
+
+    .contact-page-content {
+        width: 60%;
+    }
+
+    .dishes-container {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    }
+
+    .dish-container {
+        gap: 0;
+    }
+
+    .dish-image {
+        width: 80%;
+    }
+
+    .menu-page-content {
+        width: 80%;
+        height: 80%;
     }
 }
 
