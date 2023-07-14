@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js --open",
     "build": "webpack  --config webpack.prod.js",
-    "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push"
+    "clean": "rm -rf dist/*",
+    "deploy": "cd dist && git add --all && git commit -m \"Release\" && git push"
   },
   "repository": {
     "type": "git",
